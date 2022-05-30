@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440px, initial-scale=1.0">
+    <title>Jyotsna_CFG_Final project</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+    <script src="./script.js"></script>
+</head>
+
+<header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html" class="active">Home</a>
+            <a href="./tuxedo.html">Tuxedo</a>
+            <a href="./trench.html">Trench</a>
+            <a id="noClick">|</a>
+            <a class="cardScript" onclick="openCart()">My cart</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<body>
+    
+    <div class="fullbg">
+        <div class="tuxedo-card">
+    
+            <div class="tuxedo-card-inner">
+              
+                <div class="tuxedo-card-front">
+                    <img src="./img/Tuxedo.png" style="width: 50vw; object-fit: cover; height: 100vh;
+                    margin: 0; object-position: 100% 8vh">
+                </div>
+        
+                <div class="tuxedo-card-back">
+                    <h4 style="color: #F2E7D7; width: 30vw;">Tuxedo</h4>
+                    <h1 style="color: #F2E7D7; width: 30vw;">A warm, spicy fragrance with black pepper & patchouli</h1>    
+                    <button id="light" onclick="window.location.href='./tuxedo.html'">
+                        Buy now
+                        <svg class="lightArrow" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F2E7D7" stroke-width="2px">
+                            <g id="Arrow">
+                            <path id="Vector 2" d="M1 1.31812H13V13.3181"/>
+                            <path id="Vector 3" d="M13 1.31812L1 13.3181"/>
+                            </g>
+                        </svg>            
+                    </button>
+                </div>
+        
+        </div>
+    </div>
+        
+    <div class="trench-card">
+        
+            <div class="trench-card-inner">
+              
+                <div class="trench-card-front">
+                    <img src="./img/Trench.png" style="width: 50vw; object-fit: cover; height: 100vh;
+                    margin: 0; object-position: 0 8vh">
+                </div>
+        
+                <div class="trench-card-back">
+                    <h4 style="color: #0d0d0d; width: 30vw;">Trench</h4>
+                    <h1 style="color: #0d0d0d; width: 30vw;">A floral, woody fragrance with iris, cedarwood & white musk</h1>    
+                    <button id="dark" onclick="window.location.href='./trench.html'">
+                        Buy now
+                        <svg class="darkArrow" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#0d0d0d" stroke-width="2px">
+                            <g id="Arrow">
+                            <path id="Vector 2" d="M1 1.31812H13V13.3181"/>
+                            <path id="Vector 3" d="M13 1.31812L1 13.3181"/>
+                            </g>
+                        </svg>            
+                    </button>
+            </div>
+        
+        </div>
+    </div>
+    
+
+
+    
+</body>
+
+</html>

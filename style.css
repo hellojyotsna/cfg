@@ -1,0 +1,371 @@
+header{
+    position: fixed;
+    display: inline;
+    align-items: right;
+    background-color: white;
+    width: 100vw;
+    z-index: 99;
+}
+
+body{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* header nav a{
+    text-decoration: none;
+    color: #0d0d0d;
+    align-self: baseline;
+}
+
+header nav a:hover{
+    color: rgba(13, 13, 13, 0.5);
+    pointer-events: all;
+    cursor: pointer;
+}
+
+nav ul li {
+    list-style: none;
+    font-family: 'Inter';
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #0d0d0d;
+    padding-left: 48px;
+    display: inline-flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: right;
+}
+
+.active{
+    text-decoration: none;
+    font-weight: 700;
+    color: #0d0d0d;
+    cursor: default;
+    pointer-events: none;
+} */
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-right: 32px;
+    float: right;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    flex-direction: column-reverse;
+    color: #0d0d0d;
+    text-align: right;
+    padding: 32px 0 32px 48px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .topnav a:hover {
+      color: rgba(13, 13, 13, 0.5);
+      pointer-events: all;
+      cursor: pointer;
+  }
+  
+  .topnav a.active {
+    text-decoration: none;
+    font-weight: 700;
+    color: #0d0d0d;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+        top: 0px;
+        height: 100vh;
+    }
+    .topnav.responsive .icon {  
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      text-align: right;
+      justify-content: middle;
+      display: block;
+      position: relative;
+      top: 80px;
+    }
+
+    #noClick{
+        display: none;
+    }
+  }
+
+#noClick{
+    cursor: default;
+    pointer-events: none; 
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px 32px 0px 0px;
+    text-align: right;
+}
+
+.fullbg {
+    display: flex;
+    align-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+.tuxedo-card {
+    background-color: #0d0d0d;
+    width: 50vw;
+    height: 100vh;
+    perspective: 100vw;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .tuxedo-card-inner {
+    position: relative;
+    width: 50.0vw;
+    height: 100vh;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .tuxedo-card:hover .tuxedo-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .tuxedo-card-front, .tuxedo-card-back {
+    position: absolute;
+    width: 50wv;
+    height: 100vh;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .tuxedo-card-front {
+    background-color: #0d0d0d;
+  }
+  
+  /* Style the back side */
+  .tuxedo-card-back {
+    text-align: left;
+    background-color: #0d0d0d;
+    transform: rotateY(180deg);
+    width: 40vw;
+    height: 90vh;
+    color: #F2E7D7;
+    flex-direction: column;
+    padding-left: 10vw;
+    padding-top: 18vw;
+  }
+
+
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.trench-card {
+    background-color: #F2E7D7;
+    width: 50vw;
+    height: 100vh;
+    perspective: 100vw;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .trench-card-inner {
+    position: relative;
+    width: 50vw;
+    height: 100vh;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .trench-card:hover .trench-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .trench-card-front, .trench-card-back {
+    position: absolute;
+    width: 50wv;
+    height: 100vh;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .trench-card-front {
+    background-color: #F2E7D7;
+  }
+  
+  /* Style the back side */
+  .trench-card-back {
+    text-align: left;
+    background-color: #F2E7D7;
+    transform: rotateY(180deg);
+    width: 40vw;
+    height: 90vh;
+    color: #0d0d0d;
+    flex-direction: column;
+    padding-left: 10vw;
+    position: absolute;
+    padding-top: 18vw;
+  }
+
+h4 {
+    font-family: 'Inter';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 40px;
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+}
+
+#light{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #F2E7D7;
+    border-width: 2px;
+    color: #F2E7D7;
+    padding: 16px 24px 16px 24px;
+    border-radius: 32px;
+    box-sizing: content-box;
+    width: fit-content;
+    background-color: Transparent;
+    margin-top: 80px;
+}
+
+#light:hover{
+    background-color: #F2E7D7;
+    color: #0d0d0d;
+}
+
+#light:hover .lightArrow{
+    stroke: #0d0d0d;
+}
+
+.lightArrow{
+    padding-left: 16px;
+}
+
+#dark{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #0d0d0d;
+    border-width: 2px;
+    color: #0d0d0d;
+    padding: 16px 24px 16px 24px;
+    border-radius: 32px;
+    box-sizing: content-box;
+    width: fit-content;
+    background-color: Transparent;
+    margin-top: 80px;
+}
+
+#dark:hover{
+    background-color: #0d0d0d;
+    color: #F2E7D7;
+}
+
+#dark:hover .darkArrow{
+    stroke: #F2E7D7;
+}
+
+.darkArrow{
+    padding-left: 16px;
+}
+
+button{
+    z-index: 5;
+    pointer-events: inherit;
+}
+
+.bgImg {
+    width: 50vw;
+    object-fit: cover;
+    height: 100vh;
+    margin: 0;
+    object-position: 50% 0vh;
+}
+
+.halfImg{
+    display: flex;
+    align-content: center;
+    margin: 0;
+}
+
+.halfText {
+    width: 40vw;
+    height: 90vh;
+    flex-direction: column;
+    padding-left: 10vw;
+    position: absolute;
+    padding-top: 18vw;
+    left: 50vw;
+}
+
+#One{
+    display: none;
+}

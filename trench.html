@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #F2E7D7;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440px, initial-scale=1.0">
+    <title>Trench</title>
+    <link rel="stylesheet" href="./trenchstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+    <script src="./script.js"></script>
+</head>
+
+<header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html">Home</a>
+            <a href="./tuxedo.html">Tuxedo</a>
+            <a href="./trench.html" class="active">Trench</a>
+            <a id="noClick">|</a>
+            <a class="cardScript" onclick="openCart()">My cart</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div  class="halfImg">
+
+        <span>
+            <img src="./img/tre_main.png" alt="Tuxedo perfume by YSL" class="bgImg">
+        </span>
+
+        <span class="halfText">
+            <h4 style="color: #0d0d0d;">Trench</h4>
+
+            <span>
+                <h1 style="display:inline">$175.00</h1>
+                <h3 style="display: inline;">/ 75mL</h3>
+            </span>
+
+            <p style="width: 30vw;">A citrus scent featuring dry cedarwood and white musk to create a solid and comforting base. Hints of bergamot and tangerine sparkle on top like drops of rain.</p>    
+            <h4>Unisex · Woody · Floral · Citrus</h4>
+
+            <button class="nfbtn" onclick="document.getElementById('notifyMe').style.display='block'" style="width:auto; margin-top: 80px;">notify me</button>
+    
+            <div id="notifyMe" class="modal">
+
+                <span onclick="document.getElementById('notifyMe').style.display='none'" class="close" title="Close Modal">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#0d0d0d" stroke-width="2px">
+                        <path d="M1.5 1.5L13.5 13.5"/>
+                        <path d="M13.5 1.5L1.5 13.5"/>
+                    </svg>
+                </span>
+
+                <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                    <h4>Notify me</h4>
+                    <h2>Please enter your email address to be notified when back in stock</h2>
+                    <label for="email"></label>
+                    <input type="text" placeholder="username@email.com" name="email" required style="display: inline-block;">
+                    <button type="submit" class="notifybtn" style="display: inline-flex; align-self: center;" onclick="document.getElementById('notifyMe').style.display='none'">
+                        <svg class="darkArrow" width="14" height="15" fill="none" viewBox="0 0 14 15" xmlns="http://www.w3.org/2000/svg"  stroke="#0d0d0d" stroke-width="2px">
+                            <g id="Arrow">
+                            <path id="Vector 2" d="M1 1.31812H13V13.3181"/>
+                            <path id="Vector 3" d="M13 1.31812L1 13.3181"/>
+                            </g>
+                        </svg>
+                    </button>
+                    </div>
+                </form>
+
+            </div>
+
+        </span>
+
+    </div>
+
+</main>

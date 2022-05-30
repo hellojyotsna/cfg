@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: #0d0d0d;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1440px, initial-scale=1.0">
+    <title>Tuxedo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./img/Logo.png" type="image/x-icon">
+    <script src="./script.js"></script>
+</head>
+
+<header>
+    <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="./index.html">Home</a>
+            <a href="./tuxedo.html" class="active">Tuxedo</a>
+            <a href="./trench.html">Trench</a>
+            <a id="noClick">|</a>
+            <a class="cardScript" onclick="openCart()">My cart</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div  class="halfImg">
+
+        <span>
+            <img src="./img/tux_main.png" alt="Tuxedo perfume by YSL" class="bgImg">
+        </span>
+
+        <span class="halfText">
+            <h4 style="color: #F2E7D7;">Tuxedo</h4>
+
+            <span>
+                <h1 style="color: #F2E7D7; display:inline">$175.00</h1>
+                <h3 style="display: inline; color: #F2E7D7;">/ 75mL</h3>
+            </span>
+
+            <p style="width: 30vw; color: #F2E7D7;">A spicy unisex scent that blends the matte texture of smoked patchouli with ambergris accord to express a magnetic and dark sex appeal.</p>    
+            <h4 style="color: #F2E7D7;">Unisex · Oriental · Spicy</h4>
+            <button id="light" onclick="this.textContent='Added!'">
+                Add to cart
+                <svg class="lightArrow" width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#F2E7D7" stroke-width="2px">
+                    <g id="Arrow">
+                    <path id="Vector 2" d="M1 1.31812H13V13.3181"/>
+                    <path id="Vector 3" d="M13 1.31812L1 13.3181"/>
+                    </g>
+                </svg>            
+            </button>
+        </span>
+
+    </div>
+
+</main>

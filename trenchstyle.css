@@ -1,0 +1,261 @@
+
+header{
+    position: fixed;
+    display: inline;
+    align-items: right;
+    background-color: white;
+    width: 100vw;
+    z-index: 50;
+}
+
+body{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+    margin-right: 32px;
+    float: right;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    flex-direction: column-reverse;
+    color: #0d0d0d;
+    text-align: right;
+    padding: 32px 0 32px 48px;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .topnav a:hover {
+      color: rgba(13, 13, 13, 0.5);
+      pointer-events: all;
+      cursor: pointer;
+  }
+  
+  .topnav a.active {
+    text-decoration: none;
+    font-weight: 700;
+    color: #0d0d0d;
+    cursor: default;
+    pointer-events: none;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {
+        position: relative;
+        top: 0px;
+        height: 100vh;
+    }
+    .topnav.responsive .icon {  
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      text-align: right;
+      justify-content: middle;
+      display: block;
+      position: relative;
+      top: 80px;
+    }
+    
+    #noClick{
+        display: none;
+    }
+  }
+
+#noClick{
+    cursor: default;
+    pointer-events: none; 
+}
+
+nav ul{
+    margin: 0px;
+    padding: 0px 32px 0px 0px;
+    text-align: right;
+}
+
+h4 {
+    font-family: 'Inter';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 0;
+    padding: 0 0 8px 0;
+}
+
+h1 {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 40px;
+    width: 30vw;
+    margin: 0;
+    padding: 0;
+}
+
+h3{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+h2{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    margin: 0;
+}
+
+input[type=text] {
+  width: 70%;
+  padding: 16px 24px 16px 24px;
+  display: block;
+  border: solid 2px #0d0d0d;
+  border-radius: 32px;
+  background: #ffffff;
+  margin-right: 16px;
+  font-size: 16px;
+  font-family: 'Inter';
+  font-weight: 400;
+  color: rgba(13, 13, 13, 0.5);
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus , input[type=text]:active {
+  background: #F2E7D7;
+  border-color: #0d0d0d;
+}
+
+/* Set a style for all buttons */
+button {
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Inter';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #0d0d0d;
+    border-width: 2px;
+    color: #0d0d0d;
+    padding: 16px 24px 16px 24px;
+    border-radius: 32px;
+    box-sizing: content-box;
+    width: fit-content;
+    background-color: Transparent;
+    margin-top: 48px;
+}
+
+button:hover {
+    background-color: #0d0d0d;
+    color: #F2E7D7;
+}
+
+button:hover .darkArrow{
+    stroke: #ffffff;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.notifybtn {
+  padding: 19.5px;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 80px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(242, 231, 215, 0.8);
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: relative;
+  background-color: #ffffff;
+  width: 50vw; /* Could be more or less, depending on screen size */
+  left: 25vw;
+  top: 18vh;
+}
+
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 27vw;
+  top: 21vh;
+  z-index: 2;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+ .notifybtn {
+     width: 100%;
+  }
+}
+
+.bgImg {
+    width: 50vw;
+    object-fit: cover;
+    height: 100vh;
+    margin: 0;
+    object-position: 50% 0vh;
+}
+
+.halfImg{
+    display: flex;
+    align-content: center;
+    margin: 0;
+}
+
+.halfText {
+    width: 40vw;
+    height: 90vh;
+    flex-direction: column;
+    padding-left: 10vw;
+    position: absolute;
+    padding-top: 18vw;
+    left: 50vw;
+}
+
+#One{
+    display: none;
+}
